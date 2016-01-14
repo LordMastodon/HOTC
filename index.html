@@ -33,60 +33,75 @@
         <li class="center-align"><a class="dropdown-item center-align" href="#!">PCs and Laptops</a></li>
         <li class="center-align"><a class="dropdown-item center-align" href="#!">Future Computers</a></li>
       </ul>
+      <ul id="making-mobile" class="dropdown-content">
+        <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Programming</a></li>
+        <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Networking</a></li>
+        <li class="center-align"><a class="dropdown-item center-align valign" href="making/anatomy/">Anatomy</a></li>
+      </ul>
+      <ul id="history-mobile" class="dropdown-content">
+        <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Before the Computer</a></li>
+        <li class="center-align"><a class="dropdown-item center-align valign" href="#!">The First Computers</a></li>
+      </ul>
+      <ul id="future-mobile" class="dropdown-content">
+        <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Other Computers</a></li>
+        <li class="center-align"><a class="dropdown-item center-align valign" href="#!">PCs and Laptops</a></li>
+        <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Future Computers</a></li>
+      </ul>
       <nav class="z-depth-0">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">History of the Computer</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse"><span class="fa fa-navicon fa-fw"</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li class="active"><a class="nav-item" href="#"><span class="fa fa-home fa-fw"></span>Home</a></li>
             <li><a class="dropdown-button" href="#!" data-activates="making"><span class="fa fa-wrench fa-fw"></span>Making</a></li>
             <li><a class="dropdown-button" href="#!" data-activates="history"><span class="fa fa-history fa-ccw-spin fa-fw"></span>History</a></li>
             <li><a class="dropdown-button" href="#!" data-activates="future"><span class="fa fa-gears fa-fw"></span>Future</a></li>
           </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <li class="active side-nav-item"><a class="nav-item" href="#"><span class="fa fa-home fa-fw"></span>Home</a></li>
+            <li class="side-nav-item"><a class="dropdown-button" href="#!" data-activates="making-mobile"><span class="fa fa-wrench fa-fw"></span>Making</a></li>
+            <li class="side-nav-item"><a class="dropdown-button" href="#!" data-activates="history-mobile"><span class="fa fa-history fa-ccw-spin fa-fw"></span>History</a></li>
+            <li class="side-nav-item"><a class="dropdown-button" href="#!" data-activates="future-mobile"><span class="fa fa-gears fa-fw"></span>Future</a></li>
+          </ul>
         </div>
       </nav>
     </div>
-    <!-- <div class="row">
-      <div class="col s6 before-after"><p class="center-align">Before</p></div>
-      <div class="col s6 before-after"><p class="center-align">After</p></div>
-    </div>
-    <div class="row b-a-row">
-      <div class="col s6 before-after-img"><img src="res/HarwellDekatronComputer.jpg"></div>
-      <div class="col s6 before-after-img"><img src="res/MacbookAir.jpg"></div>
-    </div> -->
+    <h3 class="center-align before-after">Before</h3>
     <div class="parallax-container">
-      <div class="parallax"><img src="res/HarwellDekatronComputer.jpg"></div>
+      <div class="parallax"><img id="har-deka" src="res/HarwellDekatronComputer.jpg"></div>
     </div>
     <div class="row website-heading">
       <div class="col s12"><h1 class="center-align valign">History of the Computer</h1></div>
     </div>
-    <div class="row"
-      <div class="col s12"><p class="website-heading-para center-align">Welcome to Nate and Kush's website! Here you will learn everything in the history of the computer! If you want to find out about anything, just click on a link. <br> -Nate and Kush</p></div>
+    <div class="row">
+      <div class="col s12 website-heading-para"><p class="website-heading-para">Welcome to Nate and Kush's updated website! Here you can learn about almost every topic to do with computers, from programming to computers of the future. Get ready for some snazzier-looking knowledge!<br> -Nate and Kush</p></div>
+    </div>
+    <h3 class="center-align before-after">After</h3>
+    <div class="parallax-container">
+      <div class="parallax"><img id="mac-air" src="res/MacbookAir.jpg"></div>
     </div>
     <footer>
-      &copy; Nate and Kush, 2016. All rights reserved. Permission to lop off heads granted by highest trademark authority and cross-registered with the United Nations and the Federal Government of the United States of America.
+      &copy; Nate and Kush, 2016. All rights reserved. Permission to lop off heads granted by highest trademark authority.
       <br>
-      <div class="row">
-        <
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
-        (function($) {
-          $(function() {
-
+      (function($) {
+        $(function() {
           $('.dropdown-button').dropdown({
             inDuration: 400,
             outDuration: 400,
             hover: false, // Activate on hover
             belowOrigin: true, // Displays dropdown below the button
             alignment: 'right' // Displays dropdown with edge aligned to the left of button
-          }
-        );
-      }); // End Document Ready
+          });
+        }); // End Document Ready
       })(jQuery);
 
       $(document).ready(function(){
         $('.parallax').parallax();
+        $(".button-collapse").sideNav();
       });
     </script>
   </body>
