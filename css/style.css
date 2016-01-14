@@ -1,0 +1,113 @@
+html {
+	background-color: #108CD3;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif !important;
+	font-weight: 300;
+}
+
+.nav-wrapper {
+	font-family: 'Voltaire', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 0 1%;
+	background-color: #21A3E9;
+}
+
+.nav-item, .dropdown-button {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.nav-item span, .dropdown-button span {
+	margin-right: 5px;
+}
+
+.dropdown-item {
+	text-transform: uppercase;
+}
+
+#creating {
+	width: 125px !important;
+}
+
+.before-after {
+	background-color: #46721C;
+	color: #fff;
+}
+
+.row {
+	margin: 0;
+}
+
+.b-a-row {
+	margin-bottom: -7px;
+}
+
+.before-after-img {
+	padding: 0 !important;
+	margin: 0;
+}
+
+.before-after-img img {
+	width: 100%;
+}
+
+.center-align {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.website-heading {
+	background-color: #D1D1D1;
+}
+
+.website-heading h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 500;
+}
+
+.website-heading-para {
+	background-color: #B4B4B4;
+	font-weight: 400;
+}
+
+footer {
+	background-color: #1C1C1C;
+	color: #FFF;
+	font-weight: 200;
+	font-size: 12px;
+}
+
+.fa-ccw-spin {
+	-webkit-animation-name: ccw-spin;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-name: ccw-spin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes ccw-spin {
+	from {
+		-webkit-transform: rotate(359deg);
+	}
+
+    to {
+    	-webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes ccw-spin {
+    from {
+		transform: rotate(359deg);
+	}
+
+    to {
+    	transform: rotate(0deg);
+    }
+}
