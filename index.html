@@ -71,10 +71,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
-            (function($) {
+        (function($) {
           $(function() {
 
-      $('.dropdown-button').dropdown({
+          $('.dropdown-button').dropdown({
             inDuration: 400,
             outDuration: 400,
             hover: false, // Activate on hover
@@ -82,9 +82,12 @@
             alignment: 'right' // Displays dropdown with edge aligned to the left of button
           }
         );
-
-          }); // End Document Ready
+      }); // End Document Ready
       })(jQuery);
+
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
     </script>
   </body>
 </html>
