@@ -33,16 +33,16 @@
         <li class="center-align"><a class="dropdown-item center-align" href="#!">PCs and Laptops</a></li>
         <li class="center-align"><a class="dropdown-item center-align" href="#!">Future Computers</a></li>
       </ul>
-      <ul id="making-mobile" class="dropdown-content">
+      <ul id="making-mobile" class="mobile-drop dropdown-content">
         <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Programming</a></li>
         <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Networking</a></li>
         <li class="center-align"><a class="dropdown-item center-align valign" href="making/anatomy/">Anatomy</a></li>
       </ul>
-      <ul id="history-mobile" class="dropdown-content">
+      <ul id="history-mobile" class="mobile-drop dropdown-content">
         <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Before the Computer</a></li>
         <li class="center-align"><a class="dropdown-item center-align valign" href="#!">The First Computers</a></li>
       </ul>
-      <ul id="future-mobile" class="dropdown-content">
+      <ul id="future-mobile" class="mobile-drop dropdown-content">
         <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Other Computers</a></li>
         <li class="center-align"><a class="dropdown-item center-align valign" href="#!">PCs and Laptops</a></li>
         <li class="center-align"><a class="dropdown-item center-align valign" href="#!">Future Computers</a></li>
@@ -92,11 +92,11 @@
           $('.dropdown-button').dropdown({
             inDuration: 400,
             outDuration: 400,
-            hover: false, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            alignment: 'right' // Displays dropdown with edge aligned to the left of button
+            hover: false,
+            belowOrigin: true,
+            alignment: 'left'
           });
-        }); // End Document Ready
+        });
       })(jQuery);
 
       $(document).ready(function(){

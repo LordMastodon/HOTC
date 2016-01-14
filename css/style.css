@@ -99,6 +99,10 @@ footer {
 	padding-left: 20px;
 }
 
+.mobile-drop {
+	width: 200px !important;
+}
+
 .fa-ccw-spin {
 	-webkit-animation-name: ccw-spin;
 	-webkit-animation-duration: 2s;
