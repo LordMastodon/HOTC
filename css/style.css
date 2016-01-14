@@ -95,6 +95,10 @@ footer {
 	background-color: #fff;
 }
 
+.nav-wrapper {
+	padding-left: 20px;
+}
+
 .fa-ccw-spin {
 	-webkit-animation-name: ccw-spin;
 	-webkit-animation-duration: 2s;
