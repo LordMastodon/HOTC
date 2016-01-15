@@ -24,6 +24,10 @@ body {
 	margin-right: 5px;
 }
 
+.footer-heading {
+	color: #fff;
+}
+
 .dropdown-item {
 	text-transform: uppercase;
 }
