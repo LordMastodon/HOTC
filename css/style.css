@@ -28,6 +28,12 @@ body {
 	color: #fff;
 }
 
+.footer-link {
+	color: #fff;
+	size: 20px;
+	font-weight: 200;
+}
+
 .dropdown-item {
 	text-transform: uppercase;
 }
